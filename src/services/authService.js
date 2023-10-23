@@ -38,13 +38,3 @@ export const signIn = (navigate, email, password) => {
       alert(error.code);
     });
 };
-
-export const logOut = (navigate) => {
-  signOut(auth)
-    .then(() => {
-      navigate("/");
-    })
-    .catch((error) => {
-      alert(error.code);
-    });
-};
